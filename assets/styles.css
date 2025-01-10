@@ -1,0 +1,140 @@
+html{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Avalanche_on_Everest.jpg/800px-Avalanche_on_Everest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.topBar{
+    top: 0;
+    margin-top: 0;
+    width : "100%";
+    margin : 0;
+    padding: 1% 2%;
+    color: white;
+    text-align: center;
+    
+}
+.Content{
+    top: 0;
+    padding: 0;
+    height: 102vh;
+}
+
+.MapContainer{
+    padding: 1% 2%;
+    margin: 0;
+}
+
+.InputElements{
+    padding: 1%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.OriginAvalanche{
+    text-align: left;
+    border-style: solid;
+    border-color: white;
+    border-radius: 9px;
+    border-width: thick;
+    padding: 1vw;
+}
+
+.ContainerInputs{
+    position: absolute;
+    top: 0;
+    margin: 0;
+    text-align: center;
+    padding: 1%;
+    width: 12%;
+    height: 98vh;
+    font-size: medium;
+}
+
+hr{
+    height: 8px;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+.TitleSeparator{
+    width : 100%;
+    height: 8px;
+}
+
+.YearRange{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 6px;
+    margin-bottom: 0;
+}
+
+.SelectorYear{
+    width: 5vw;
+}
+
+.OrignSelector{
+    margin-bottom: 0;
+}
+
+.TableWithData{
+    color: black;
+    padding: 1% 2%;
+}
+
+h2{
+    text-align : center;
+    margin: 0;
+    color: white;
+}
+
+.LinePlotContainer{
+    padding: 1% 2%;
+}
+
+.Footer{
+    background-color: #636efa;
+    padding: 1% 2%;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+@media (width<370px){
+    hr{
+        height: 8px;
+        width: 96%;
+        background-color: white;
+        border-style: solid;
+        border-color: white;
+    }
+    .YearRange{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .SelectorYear{
+        width: 26vw;
+    }
+    .DropdownOrigin label{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+}
