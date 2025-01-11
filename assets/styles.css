@@ -115,7 +115,7 @@ a{
     color: white;
 }
 
-@media (width<370px){
+@media (max-width: 768px){
     hr{
         height: 8px;
         width: 96%;
