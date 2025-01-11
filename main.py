@@ -12,6 +12,7 @@ import plotly.express as px
 ##########################################################
 
 app = Dash(__name__)
+server = app.server
 
 app.title = "Avalanches in Spain"
 
