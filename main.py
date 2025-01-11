@@ -90,7 +90,7 @@ InputElementsMap = html.Div([
 TheMap = html.Div(children=[
                 html.Hr(className="TitleSeparator"), html.Br(), 
                 html.H2("Map"),
-                html.H3("Color by:", style = {'margin-bottom': '10px', 'margin-top': '0'}),
+                html.H3("Color by:", style = {'margin-top': '20px', 'margin-bottom': '10px'}),
                 dcc.Dropdown(options=['Danger Score',
                               'Dragged', 
                               'Hurt',
@@ -144,8 +144,8 @@ LinePlot.update_layout(
 
 EvolutionPlot = html.Div([
     html.P('''
-        Since avalanche accidents published on ACNA's website start at season 200708, 
-        avalanches prior to December 2007 are not included and, therefore, this year has been
+        Due to the fact that avalanche accidents published on ACNA's website start at season 200708, 
+        avalanches prior to December 2007 are not included on the data and, therefore, this year has been
         removed from the line plot. 
         ''', style = {"text-align" : "center"}
         ),
@@ -168,6 +168,8 @@ Footer = html.Footer(children=[
     html.A("https://www.acna.es/estadisticas-de-accidentes/", href="https://www.acna.es/estadisticas-de-accidentes/"),
     html.H3("GitHub of the web app"),
     html.A("https://github.com/OSCAR-CASALS/AVALANCHES-IN-SPAIN.git", href="https://github.com/OSCAR-CASALS/AVALANCHES-IN-SPAIN.git"),
+    html.H3("Portfolio"),
+    html.A("https://oscar-casals.github.io/Oscar_Casals_Morro_Portfolio", href="https://oscar-casals.github.io/Oscar_Casals_Morro_Portfolio"),
     html.Br(), html.H3(), html.Br()
 ],
 className="Footer")
@@ -252,4 +254,4 @@ def update_tooltips(data):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
